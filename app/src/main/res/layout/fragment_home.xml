@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="#8F8282"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/profil"
+        android:orientation="vertical">
+         <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/julandrianpng"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#fff"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Julandrian Agung"
+                android:textSize="40dp"
+                android:textColor="#ffff"
+         />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Seorang pemuda dari Riau pergi merantau ke Bandung demi gelar S.Kom yang ingin Ia raih"
+                android:textAlignment="center"
+                android:layout_marginHorizontal="50dp"
+                android:textColor="#fff"
+         />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/interest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@id/profil"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:text="INTEREST"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/hobby"
+        android:layout_below="@id/interest"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="Hobby     : "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="Travelling, Gaming, and Editing"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/makes"
+        android:layout_below="@id/hobby"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="40dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="Makes     : "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="Kebab, Rendang, and Cookies"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mikes"
+        android:layout_marginHorizontal="40dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/makes">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="Mikes      : "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="Jus Alpukat, Tebs, and Mineral Water"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/inter"
+        android:layout_marginHorizontal="40dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/mikes">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="Interest   : "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="#fff"
+            android:layout_height="wrap_content"
+            android:text="Sangat tertarik dalam hal Editing Video"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inter"
+        android:layout_marginHorizontal="40dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="Cita-cita  : "
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="Guru"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
